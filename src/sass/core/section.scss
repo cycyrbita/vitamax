@@ -33,6 +33,14 @@
     &_def {
         background-color: #fdf3fc;
     }
+
+    &_prof {
+        position: relative;
+        background-position: center;
+        background-image: url("../media/section/prof.jpg");
+        background-size: cover;
+        overflow-x: hidden;
+    }
 }
 
 @media (max-width: 1280px) {
