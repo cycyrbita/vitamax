@@ -7,13 +7,24 @@
 
     &_face {
         background-color: #282829;
-        background-repeat: no-repeat;
         background-position: center;
         background-image: url("../media/section/face.jpg");
+    }
+
+    &_info {
+        overflow: hidden;
+        background-color: #fdf3fc;
+        background-position: center top;
+        background-image: url("../media/section/info.jpg");
     }
 }
 
 @media (max-width: 1280px) {
+    .section {
+        &_info {
+            background-position: -170px top;
+        }
+    }
 }
 
 @media (max-width: 768px) {
