@@ -23,6 +23,12 @@
         background-position: left bottom;
         background-image: url("../media/section/causes.jpg");
     }
+
+    &_strenh {
+        background-position: center;
+        background-image: url("../media/section/strenh.jpg");
+        background-size: contain;
+    }
 }
 
 @media (max-width: 1280px) {
@@ -35,6 +41,10 @@
             background-position: center bottom;
             background-size: 400px;
             padding-bottom: 300px;
+        }
+
+        &_strenh {
+            background-image: none;
         }
     }
 }
