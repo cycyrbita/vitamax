@@ -17,12 +17,24 @@
         background-position: center top;
         background-image: url("../media/section/info.jpg");
     }
+
+    &_causes {
+        background-color: #282829;
+        background-position: left bottom;
+        background-image: url("../media/section/causes.jpg");
+    }
 }
 
 @media (max-width: 1280px) {
     .section {
         &_info {
             background-position: -170px top;
+        }
+
+        &_causes {
+            background-position: center bottom;
+            background-size: 400px;
+            padding-bottom: 300px;
         }
     }
 }
@@ -31,6 +43,12 @@
     .section {
         padding-top: 30px;
         padding-bottom: 30px;
+
+        &_causes {
+            background-image: url("../media/section/causes-768.png");
+            padding-bottom: 300px;
+            background-size: auto;
+        }
     }
 }
 
@@ -39,6 +57,12 @@
         &_face {
             background-position: center 340px;
             background-image: url("../media/section/face-480.jpg");
+        }
+
+        &_causes {
+            background-color: #040404;
+            padding-bottom: 30px;
+            background-position: center 220px;
         }
     }
 }
