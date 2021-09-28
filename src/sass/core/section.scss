@@ -29,6 +29,10 @@
         background-image: url("../media/section/strenh.jpg");
         background-size: contain;
     }
+
+    &_def {
+        background-color: #fdf3fc;
+    }
 }
 
 @media (max-width: 1280px) {

@@ -1,0 +1,120 @@
+.def {
+    display: flex;
+}
+
+.def__box {
+    flex: 0 0 50%;
+    width: 50%;
+
+    &:last-child {
+        padding-left: 60px;
+    }
+}
+
+.def__title {
+    margin-bottom: 30px;
+    font-size: 137px;
+    font-weight: 800;
+    color: #a7a6a8;
+    line-height: 1;
+
+    span {
+        display: block;
+        font-size: 42px;
+        color: #000;
+    }
+}
+
+.def__subtitle {
+    font-size: 20px;
+    max-width: 450px;
+}
+
+.def__item {
+    border-radius: 5px;
+    color: #fff;
+    background-color: #eeeef4;
+
+    &+& {
+        margin-top: 20px;
+    }
+
+    p {
+        display: flex;
+        padding: 13px;
+        border-radius: 5px;
+        background: rgb(62, 62, 223);
+        background: linear-gradient(90deg, rgba(62, 62, 223, 1) 0%, rgba(36, 36, 211, 1) 100%);
+    }
+
+    &:nth-child(1) {
+        p {
+            width: 98%;
+            background: rgb(62, 62, 223);
+            background: linear-gradient(90deg, rgba(62, 62, 223, 1) 0%, rgba(36, 36, 211, 1) 100%);
+        }
+    }
+
+    &:nth-child(2) {
+        p {
+            width: 86%;
+            background: rgb(62, 192, 223);
+            background: linear-gradient(90deg, rgba(62, 192, 223, 1) 0%, rgba(36, 169, 211, 1) 100%);
+        }
+    }
+
+    &:nth-child(3) {
+        p {
+            width: 78%;
+            background: rgb(223, 162, 60);
+            background: linear-gradient(90deg, rgba(223, 162, 60, 1) 0%, rgba(211, 136, 36, 1) 100%);
+        }
+    }
+
+    &:nth-child(4) {
+        p {
+            width: 90%;
+            background: rgb(223, 64, 60);
+            background: linear-gradient(90deg, rgba(223, 64, 60, 1) 0%, rgba(211, 39, 36, 1) 100%);
+        }
+    }
+
+    span {
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .def {
+        flex-direction: column;
+    }
+
+    .def__box {
+        width: 100%;
+
+        &:last-child {
+            padding-left: 0;
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .def__title {
+        font-size: 74px;
+    }
+}
+
+@media (max-width: 480px) {
+    .def__title {
+        margin-bottom: 15px;
+        font-size: 55px;
+
+        span {
+            font-size: 34px;
+        }
+    }
+}
