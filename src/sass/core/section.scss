@@ -4,6 +4,13 @@
     padding-bottom: 60px;
     background-color: #fff;
     background-repeat: no-repeat;
+
+    &_face {
+        background-color: #282829;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("../media/section/face.jpg");
+    }
 }
 
 @media (max-width: 1280px) {
@@ -18,6 +25,9 @@
 
 @media (max-width: 480px) {
     .section {
-        
+        &_face {
+            background-position: center 340px;
+            background-image: url("../media/section/face-480.jpg");
+        }
     }
 }

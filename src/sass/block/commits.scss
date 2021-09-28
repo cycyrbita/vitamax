@@ -1,9 +1,8 @@
 .commits__title {
     margin-bottom: 30px;
-    font-size: 76px;
-    text-transform: uppercase;
-    font-family: "Heading-Pro";
+    font-size: 42px;
     text-align: center;
+    font-weight: 800;
 }
 
 .commits__title span {
@@ -69,17 +68,17 @@
 
 .commits__name {
     margin-bottom: 20px;
-    font-size: 46px;
-    text-transform: uppercase;
-    font-family: "Heading-Pro";
+    font-size: 26px;
     color: #6c1c9d;
     line-height: 0.9;
 
     & span {
         display: block;
-        margin-top: 5px;
-        font-size: 34px;
+        margin-top: 10px;
+        font-size: 17px;
+        text-transform: uppercase;
         color: #000;
+        font-weight: 500;
     }
 }
 

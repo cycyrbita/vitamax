@@ -12,72 +12,104 @@
 
 .face__logo {
     display: inline-block;
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 5px 7px 2px 7px;
     margin-bottom: 45px;
-    font-weight: 700;
-    font-size: 17px;
-    font-family: "Heading-Pro";
+    font-size: 15px;
+    font-weight: 800;
     text-transform: uppercase;
     color: #fff;
-    background-color: #671ca1;
-    letter-spacing: 1px;
+    border: 2px solid #65d8d7;
 }
 
 .face__title {
-    margin-bottom: 50px;
-    font-size: 38px;
-    font-family: "Heading-Pro";
+    margin-bottom: 10px;
+    font-size: 68px;
     text-transform: uppercase;
-    color: #303030;
+    color: #fff;
     line-height: .9;
-    letter-spacing: 11.5px;
+    font-weight: 800;
+}
 
-    b {
-        font-weight: 700;
-        font-size: 87px;
-        font-weight: 700;
-        letter-spacing: 0;
-    }
+.face__subtitle {
+    margin-bottom: 60px;
 
-    mark {
-        display: block;
-        font-size: 120px;
-        font-weight: 900;
-        color: #671ca1;
-        letter-spacing: 0;
+    span {
+        display: inline-block;
+        border-radius: 2px;
+        margin-right: 5px;
+        margin-left: 5px;
+
+        &:first-child {
+            font-weight: 700;
+            color: #1d1d1d;
+            padding: 5px 7px 4px 7px;
+            text-transform: uppercase;
+            background-color: #efc123;
+        }
+
+        &:last-child {
+            font-weight: 700;
+            color: #1d1d1d;
+            padding: 5px 7px 4px 7px;
+            text-transform: uppercase;
+            background-color: #65d8d7;
+        }
     }
 }
 
 .face__list {
-    display: flex;
-
     & > div {
-        padding-top: 70px;
-        width: 124px;
-        height: 124px;
-        border-radius: 50%;
-        background-color: #671ca1;
-        font-size: 15px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 240px;
+        height: 66px;
+        padding-left: 80px;
+        font-size: 17px;
         color: #fff;
-        text-align: center;
-        background-repeat: no-repeat;
-        background-position: center 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 66px;
+            height: 100%;
+            content: '';
+            background-color: #efc123;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 4px;
+        }
+
+        b {
+            display: block;
+            font-weight: 800;
+        }
 
         & + div {
-            margin-left: 30px;
+            margin-top: 18px;
         }
 
         &:nth-child(1) {
-            background-image: url("../media/face/icon-1.png");
+            &::before {
+                background-image: url("../media/face/icon-1.png");
+            }
         }
 
         &:nth-child(2) {
-            background-image: url("../media/face/icon-2.png");
+            &::before {
+                background-image: url("../media/face/icon-2.png");
+            }
         }
 
         &:nth-child(3) {
-            background-image: url("../media/face/icon-3.png");
+            &::before {
+                background-image: url("../media/face/icon-3.png");
+            }
         }
     }
 }
@@ -104,15 +136,22 @@
     }
 
     .face__product {
+        display: flex;
         position: static;
         width: auto;
         transform: translateX(0);
+        margin-top: -300px;
+
+        img {
+            margin-left: auto;
+            margin-right: -68px;
+        }
     }
 }
 
 @media (max-width: 768px) {
     .face__title {
-        font-size: 30px;
+        font-size: 62px;
 
         b {
             font-size: 50px;
@@ -122,12 +161,22 @@
             font-size: 70px;
         }
     }
+
+    .face__product {
+        margin-top: 0;
+
+        img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 }
 
 @media (max-width: 480px) {
     .face__title {
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
+        font-size: 48px;
     }
 
     .face__box {
@@ -139,23 +188,28 @@
     }
 
     .face__logo {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
 
     .face__list {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        text-align: left;
+    }
 
-        & > div {
-            padding-top: 45px;
-            width: 90px;
-            height: 90px;
-            background-size: 30px;
-            background-position: center 10px;
-            font-size: 14px;
+    .face__product {
+        img {
+            max-width: 280px;
+        }
+    }
 
-            & + div {
-                margin-left: 10px;
-            }
+    .face__subtitle {
+        margin-bottom: 30px;
+
+        span {
+            font-size: 12px;
+            margin: 5px;
         }
     }
 }
