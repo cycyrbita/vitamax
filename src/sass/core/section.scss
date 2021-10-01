@@ -7,11 +7,16 @@
 
     &_face {
         background-color: #282829;
-        background-position: center;
+        background-position: center bottom;
         background-image: url("../media/section/face.jpg");
     }
 
+    &_face-last {
+        padding-top: 120px;
+    }
+
     &_info {
+        padding-top: 120px;
         overflow: hidden;
         background-color: #fdf3fc;
         background-position: center top;
@@ -36,10 +41,10 @@
 
     &_prof {
         position: relative;
+        padding-bottom: 120px;
         background-position: center;
         background-image: url("../media/section/prof.jpg");
         background-size: cover;
-        overflow-x: hidden;
     }
 }
 
@@ -71,6 +76,14 @@
             padding-bottom: 300px;
             background-size: auto;
         }
+
+        &_face-last {
+            padding-top: 120px;
+        }
+
+        &_prof {
+            padding-bottom: 130px;
+        }
     }
 }
 
@@ -81,10 +94,18 @@
             background-image: url("../media/section/face-480.jpg");
         }
 
+        &_face-last {
+            padding-top: 30px;
+        }
+
         &_causes {
             background-color: #040404;
             padding-bottom: 30px;
             background-position: center 220px;
+        }
+
+        &_prof {
+            padding-bottom: 30px;
         }
     }
 }

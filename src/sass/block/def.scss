@@ -23,6 +23,16 @@
         font-size: 42px;
         color: #000;
     }
+    
+    mark {
+        position: relative;
+        color: #a7a6a8;
+        background: linear-gradient(180deg, #a7a6a8 33%, #e5dee4 70%, #e5dee4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #0B2349;
+        display: table;
+    }
 }
 
 .def__subtitle {
